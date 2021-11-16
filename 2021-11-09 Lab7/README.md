@@ -287,13 +287,13 @@ class Card {
         this.Name = "Empty";
         this.Age = 0;
         this.Amount = 0;
-	}
+    }
 
     public Card(String name, int age, int amount) {
         this.Name = name;
         this.Age = age;
         this.Amount = amount;
-	}
+    }
 
     public void Store(String name) {
         this.Name = name;
