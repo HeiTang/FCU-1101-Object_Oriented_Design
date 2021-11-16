@@ -215,30 +215,30 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
-		Card[] mem = new Card[20];
+        Scanner s = new Scanner(System.in);
+        Card[] mem = new Card[20];
         int function = 0, func3 = 0, id = 0;
         int age, amount, distance;
         String name;
 		
         while(function != -1) {
-			function = s.nextInt();
+            function = s.nextInt();
 
             switch(function) {
-				case 1:
+                case 1:
                     name = s.next();
                     age = s.nextInt();
                     amount = s.nextInt(); 
                     mem[id] = new Card(name, age, amount);
-					id++;
+                    id++;
                     break;
 					
-				case 2:
+                case 2:
                     name = s.next();
                     mem[id] = new Card();
                     mem[id].Store(name);
                     id++;
-					break;
+                    break;
                 
                 case 3:
                     name = s.next();
@@ -273,31 +273,31 @@ public class Main {
                         }
                     }
                     break;
-			} 
-		}
-	}
+            } 
+        }
+    }
 }
 
 class Card {
-	public int Age;
-	public int Amount;
+    public int Age;
+    public int Amount;
     public String Name;
 
     public Card() {
-		this.Name = "Empty";
+        this.Name = "Empty";
         this.Age = 0;
         this.Amount = 0;
 	}
 
-	public Card(String name, int age, int amount) {
-		this.Name = name;
+    public Card(String name, int age, int amount) {
+        this.Name = name;
         this.Age = age;
         this.Amount = amount;
 	}
 
-	public void Store(String name) {
-		this.Name = name;
-	}
+    public void Store(String name) {
+        this.Name = name;
+    }
 
     public void setAge(int age) {
         this.Age = age;
@@ -323,6 +323,6 @@ class Card {
 	
     public void getData() {
         System.out.printf("%s %d %d\n", this.Name, this.Age, this.Amount);
-	}
+    }
 }
 ```
