@@ -36,7 +36,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+		Scanner s = new Scanner(System.in);
 
 		String input = s.nextLine(); 
 		String[] input_char = input.split("\\s+"); 
@@ -47,7 +47,7 @@ public class Main {
 			rev.setIntArray(i, Integer.parseInt(input_char[i]));
 		}
 
-        rev.reverseArray();
+        	rev.reverseArray();
 		rev.printArray();
 	}
 }
@@ -142,7 +142,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+        	Scanner s = new Scanner(System.in);
 		CharArray arr = new CharArray();
 		int i;
 		int length = s.nextInt();
@@ -152,7 +152,7 @@ public class Main {
 		}
 		
 		arr.BubbleSort(length);
-        arr.LinearSearch(s.next().charAt(0));
+        	arr.LinearSearch(s.next().charAt(0));
 	}
 }
 
@@ -165,33 +165,33 @@ class CharArray {
 	
 	public void LinearSearch(char flag) {
 		int i = 0;
-        while(true){
-            if(Array[i] == flag){
-                System.out.println(i);
-                break;
-            }
-            i++;
-        }
+		while(true) {
+			if(Array[i] == flag) {
+				System.out.println(i);
+				break;
+			}
+			i++;
+		}
 	}
 
 	public void BubbleSort(int length) {
-	    char temp;
+		char temp;
 
-	    for(int i = 0 ; i  < length ; i++) {
-	    	for(int j = 0 ; j < length - 1 ; j++) {
-	    	   if(Array[j] > Array[j+1]) {
-	    		  temp = Array[j];
-	    		  Array[j] = Array[j+1];
-	    		  Array[j+1] = temp;
-	    	   }
-	    	}
-	    }
+		for(int i = 0 ; i  < length ; i++) {
+			for(int j = 0 ; j < length - 1 ; j++) {
+				if(Array[j] > Array[j+1]) {
+					temp = Array[j];
+					Array[j] = Array[j+1];
+					Array[j+1] = temp;
+				}
+			}
+		}
 
 		for(int i = 0 ; i < length - 1 ; i++) {
-            System.out.print(Array[i] + " ");
-        }
+			System.out.print(Array[i] + " ");
+		}
 
-        System.out.println(Array[length-1]);
+		System.out.println(Array[length-1]);
 	}
 }
 ```
@@ -239,7 +239,7 @@ import java.util.Scanner;
 public class Main {
     
 	public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+		Scanner s = new Scanner(System.in);
 		Student S = new Student(s.next(), s.next());
 		S.setGrade(s.nextInt(), s.nextInt(), s.nextInt());
 		S.printPerson();
@@ -281,15 +281,15 @@ class Student extends Person {
 	
 	@Override
 	public void printPerson() {
-        int ave = 0;
+		int ave = 0;
 		String name = super.name;
 		String ID = super.ID;
 
-        ave = (this.grade1 + this.grade2 + this.grade3) / 3;
+		ave = (this.grade1 + this.grade2 + this.grade3) / 3;
 
 		System.out.println("Student:" + name);
 		System.out.println("ID:" + ID);
-        System.out.println("Average score:" + ave);
+		System.out.println("Average score:" + ave);
 	}
 }
 ```
