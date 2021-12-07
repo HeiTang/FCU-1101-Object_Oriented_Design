@@ -43,6 +43,7 @@
 
 ### Input Samples
 ```
+無
 ```
 
 ### Output Samples
@@ -156,6 +157,7 @@ class Car extends Vehicle {
 
 ### Input Samples
 ```
+無
 ```
 
 ### Output Samples
@@ -280,6 +282,7 @@ class Car extends Vehicle {
 
 ### Input Samples
 ```
+無
 ```
 
 ### Output Samples
