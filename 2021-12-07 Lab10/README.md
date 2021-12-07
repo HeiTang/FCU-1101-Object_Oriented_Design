@@ -65,12 +65,12 @@ public class Main {
 
 	public static void main(String[] args) {
 
-        Car car1 = new Car(1233567, 'W', 4);
-        Car car2 = new Car(5678567, 'B', 5);
-        car1.printVehicle();
-        car2.printVehicle();
-        car2.setColor('W');
-        car2.printVehicle();
+		Car car1 = new Car(1233567, 'W', 4);
+		Car car2 = new Car(5678567, 'B', 5);
+		car1.printVehicle();
+		car2.printVehicle();
+		car2.setColor('W');
+		car2.printVehicle();
 	}
 }
 
@@ -90,38 +90,38 @@ class Vehicle {
 	}
 
 	public void setColor(char Color) {
-        this.Color = Color;
+		this.Color = Color;
 	}
 
-    public char getColor() {
-        return this.Color;
+	public char getColor() {
+		return this.Color;
 	}
 
-    public void printVehicle() {
-        System.out.printf("Engine Number:%d\n", this.EngineNum);
-        System.out.printf("Color:%c\n", this.Color);
+	public void printVehicle() {
+		System.out.printf("Engine Number:%d\n", this.EngineNum);
+		System.out.printf("Color:%c\n", this.Color);
 	}
 }
 
 class Car extends Vehicle {
-    private int Doors;
+	private int Doors;
 
-    public Car(int EngineNum, char Color, int Doors) {
-        super.setEngineNum(EngineNum);
-        super.setColor(Color);
-        this.Doors = Doors;
-    }
+	public Car(int EngineNum, char Color, int Doors) {
+		super.setEngineNum(EngineNum);
+		super.setColor(Color);
+		this.Doors = Doors;
+	}
 
-    public void setDoors(int Doors) {
-        this.Doors = Doors;
-    }
+	public void setDoors(int Doors) {
+		this.Doors = Doors;
+	}
 
-    @Override
-    public void printVehicle() {
-        System.out.printf("Engine Number:%d\n", super.getEngineNum());
-        System.out.printf("Color:%s\n", super.getColor());
-        System.out.printf("Doors Number:%d\n", this.Doors);
-    }
+	@Override
+	public void printVehicle() {
+		System.out.printf("Engine Number:%d\n", super.getEngineNum());
+		System.out.printf("Color:%s\n", super.getColor());
+		System.out.printf("Doors Number:%d\n", this.Doors);
+	}
 }
 ```
 
@@ -176,10 +176,10 @@ public class Main {
 
 	public static void main(String[] args) {
 
-        Car car1 = new Car(1233567, 'W', 4);
-        Car car2 = new Car(5678567, 'B', 5);
-        car1.printVehicle();
-        car2.printVehicle();
+		Car car1 = new Car(1233567, 'W', 4);
+		Car car2 = new Car(5678567, 'B', 5);
+		car1.printVehicle();
+		car2.printVehicle();
 	}
 }
 
@@ -190,51 +190,51 @@ class Vehicle {
 	public Vehicle() {
 	}
 
-    public Vehicle(int EngineNum, char Color) {
-        this.EngineNum = EngineNum;
-        this.Color = Color;
+	public Vehicle(int EngineNum, char Color) {
+		this.EngineNum = EngineNum;
+		this.Color = Color;
 	}
 	
 	public void setEngineNum(int EngineNum) {   
 		this.EngineNum = EngineNum;
 	}
 
-    public int getEngineNum() {   
+	public int getEngineNum() {   
 		return this.EngineNum;
 	}
 
 	public void setColor(char Color) {
-        this.Color = Color;
+        	this.Color = Color;
 	}
 
-    public char getColor() {
-        return this.Color;
+	public char getColor() {
+        	return this.Color;
 	}
 
-    public void printVehicle() {
-        System.out.printf("Engine Number:%d\n", this.EngineNum);
-        System.out.printf("Color:%c\n", this.Color);
+	public void printVehicle() {
+       		System.out.printf("Engine Number:%d\n", this.EngineNum);
+        	System.out.printf("Color:%c\n", this.Color);
 	}
 }
 
 class Car extends Vehicle {
-    private int Doors;
+	private int Doors;
 
-    public Car(int EngineNum, char Color, int Doors) {
-        super(EngineNum, Color);
-        this.Doors = Doors;
-    }
+	public Car(int EngineNum, char Color, int Doors) {
+		super(EngineNum, Color);
+		this.Doors = Doors;
+	}
 
-    public void setDoors(int Doors) {
-        this.Doors = Doors;
-    }
+	public void setDoors(int Doors) {
+		this.Doors = Doors;
+	}
 
-    @Override
-    public void printVehicle() {
-        System.out.printf("Engine Number:%d\n", super.getEngineNum());
-        System.out.printf("Color:%s\n", super.getColor());
-        System.out.printf("Doors Number:%d\n", this.Doors);
-    }
+	@Override
+	public void printVehicle() {
+		System.out.printf("Engine Number:%d\n", super.getEngineNum());
+		System.out.printf("Color:%s\n", super.getColor());
+		System.out.printf("Doors Number:%d\n", this.Doors);
+	}
 }
 ```
 
@@ -303,10 +303,10 @@ public class Main {
 
 	public static void main(String[] args) {
 
-        Teacher teacher = new Teacher("Eric", 159598, 144);
-        Salesperson salesperson = new Salesperson("Amy", 158965, 432000);
-        teacher.printPerson();
-        salesperson.printPerson();
+		Teacher teacher = new Teacher("Eric", 159598, 144);
+		Salesperson salesperson = new Salesperson("Amy", 158965, 432000);
+		teacher.printPerson();
+		salesperson.printPerson();
 	}
 }
 
@@ -315,8 +315,8 @@ class Person {
 	private String Name;
 
 	public Person(String Name, int ID) {
-        this.Name = Name;
-        this.ID = ID;
+		this.Name = Name;
+		this.ID = ID;
 	}
 	
 	public void setId(int ID) {   
@@ -324,52 +324,52 @@ class Person {
 	}
 
 	public void setName(String Name) {
-        this.Name = Name;
+        	this.Name = Name;
 	}
 
-    public void printPerson() {
-        System.out.printf("Name:%s\n", this.Name);
-        System.out.printf("ID:%d\n", this.ID);
+	public void printPerson() {
+		System.out.printf("Name:%s\n", this.Name);
+		System.out.printf("ID:%d\n", this.ID);
 	}
 }
 
 class Teacher extends Person {
-    private int TeachHours;
+	private int TeachHours;
 
-    public Teacher(String Name, int ID, int TeachHours) {
-        super(Name, ID);
-        this.TeachHours = TeachHours;
-    }
+	public Teacher(String Name, int ID, int TeachHours) {
+		super(Name, ID);
+		this.TeachHours = TeachHours;
+	}
 
-    public void setTeachHours(int TeachHours) {
-        this.TeachHours = TeachHours;
-    }
+	public void setTeachHours(int TeachHours) {
+		this.TeachHours = TeachHours;
+	}
 
-    @Override
-    public void printPerson() {
-        super.printPerson();
-        System.out.println("Type:Teacher");
-        System.out.printf("AverageHours:%d\n", this.TeachHours / 18);
-    }
+	@Override
+	public void printPerson() {
+		super.printPerson();
+		System.out.println("Type:Teacher");
+		System.out.printf("AverageHours:%d\n", this.TeachHours / 18);
+	}
 }
 
 class Salesperson extends Person {
-    private int YearSalary;
+	private int YearSalary;
 
-    public Salesperson(String Name, int ID, int YearSalary) {
-        super(Name, ID);
-        this.YearSalary = YearSalary;
-    }
+	public Salesperson(String Name, int ID, int YearSalary) {
+		super(Name, ID);
+		this.YearSalary = YearSalary;
+	}
 
-    public void setYearSalary(int YearSalary) {
-        this.YearSalary = YearSalary;
-    }
+	public void setYearSalary(int YearSalary) {
+		this.YearSalary = YearSalary;
+	}
 
-    @Override
-    public void printPerson() {
-        super.printPerson();
-        System.out.println("Type:Salesperson");
-        System.out.printf("Salary:%d\n", this.YearSalary / 12);
-    }
+	@Override
+	public void printPerson() {
+		super.printPerson();
+		System.out.println("Type:Salesperson");
+		System.out.printf("Salary:%d\n", this.YearSalary / 12);
+	}
 }
 ```
