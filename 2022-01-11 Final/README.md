@@ -24,23 +24,24 @@
   2. 建立 Max Min Average 的物件建構子中的參數是 array。
   3. 呼叫方法 `cal()`，讓此方法去呼叫 Score 類別裡面的 `calculate()`，實現多型的概念。
 
-    ```java=
-    public static void main(String[] args) {
-        int[] array = {60, 86, 34, 100, 57, 23};
+    
+      ```java
+      public static void main(String[] args) {
+          int[] array = {60, 86, 34, 100, 57, 23};
 
-        score max = new Max(array);
-        Score min = new Min(array);
-        Score average = new Average(array);
+          score max = new Max(array);
+          Score min = new Min(array);
+          Score average = new Average(array);
 
-        cal(max);
-        cal(min);
-        cal(average);
-    }
+          cal(max);
+          cal(min);
+          cal(average);
+      }
 
-    public static void cal(Score s) {
-        s.calculate();
-    }
-    ```
+      public static void cal(Score s) {
+          s.calculate();
+      }
+      ```
 
 ### Input
 本題無輸入，請自行在程式碼中加入 array 的數值。
@@ -176,18 +177,18 @@ class Average extends Score {
 - （20%）最後，請在 main() 裡面實作出 master、bachelor、teacher 的物件，並利用建構方法設定資料，最後呼叫 `printPersin()` 輸出人物資料。
   - 如下程式碼參考
 
-        ```java=
-        public static void main(String[] args) {
-            master Amy = new master("Amy", 23, "M0856195", 1, "Ian");
-            Amy.printPerson();
+      ```java
+      public static void main(String[] args) {
+          master Amy = new master("Amy", 23, "M0856195", 1, "Ian");
+          Amy.printPerson();
 
-            bachelor Eric = new bachelor("Eric", 20, "D0812659", 3, "SIEM");
-            Eric.printPerson();
+          bachelor Eric = new bachelor("Eric", 20, "D0812659", 3, "SIEM");
+          Eric.printPerson();
 
-            teacher Leo = new teacher("Leo", 32, "T871689", 1470000);
-            Leo.printPerson();
-        }
-        ```
+          teacher Leo = new teacher("Leo", 32, "T871689", 1470000);
+          Leo.printPerson();
+      }
+      ```
 
 ### Input
 本題無輸入，請自己產生以下資料。
